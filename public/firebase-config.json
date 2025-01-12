@@ -1,0 +1,11 @@
+{
+  "firebaseConfig": {
+    "apiKey": "AIzaSyABKGz_K-Z70d9xZV29QuRVIp3OermrdGw",
+    "authDomain": "pwa-test-2eb90.firebaseapp.com",
+    "projectId": "pwa-test-2eb90",
+    "storageBucket": "pwa-test-2eb90.firebasestorage.app",
+    "messagingSenderId": "833109359733",
+    "appId": "1:833109359733:web:3ee292f3df249a186f4c3c",
+    "vapidKey": "BH4UOgJI4T20ER6fg1k8Uop1uqMSIsFNbs90Nu3k7Thg3yazTZUGQ_O0uGORYW1m15KDwITP3SZvf6f1wCfRlL8"
+  }
+}
