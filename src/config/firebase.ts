@@ -1,7 +1,7 @@
 // src/config/firebase.ts
 
 import { initializeApp } from "firebase/app";
-import { getMessaging, getToken, onMessage, Messaging } from "firebase/messaging";
+import { getMessaging, getToken, Messaging } from "firebase/messaging";
 
 export const firebaseConfig = {
   apiKey: import.meta.env.VITE_API_KEY,
@@ -33,11 +33,11 @@ export const requestForToken = (): Promise<string | null> => {
     });
 };
 
-onMessage(messaging, ({ notification }) => {
-  if (notification) {
-    new Notification(notification.title || "", {
-      body: notification.body,
-      icon: notification.icon,
-    });
-  }
-});
+// onMessage(messaging, ({ notification }) => {
+//   if (notification) {
+//     new Notification(notification.title || "", {
+//       body: notification.body,
+//       icon: notification.icon,
+//     });
+//   }
+// });
