@@ -17,7 +17,7 @@ fetch("/firebase-config.json")
       console.log("[firebase-messaging-sw.js] Received background message ", payload);
 
       // 알림 표시
-      const notificationTitle = payload.notification.title;
+      const notificationTitle = `background: ${payload.notification.title}`;
       const notificationOptions = {
         body: payload.notification.body,
         icon: "/path/to/icon.png", // 알림에 표시할 아이콘 경로
