@@ -32,12 +32,3 @@ export const requestForToken = (): Promise<string | null> => {
       return null;
     });
 };
-
-// onMessage(messaging, ({ notification }) => {
-//   if (notification) {
-//     new Notification(notification.title || "", {
-//       body: notification.body,
-//       icon: notification.icon,
-//     });
-//   }
-// });

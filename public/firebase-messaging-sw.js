@@ -1,8 +1,5 @@
 // src/public/firebase-messaging-sw.js
 
-importScripts("https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js");
-importScripts("https://www.gstatic.com/firebasejs/9.0.0/firebase-messaging-compat.js");
-
 // 알림 클릭 이벤트 처리
 self.addEventListener("notificationclick", event => {
   console.log("[firebase-messaging-sw.js] Notification click Received.");
@@ -21,6 +18,7 @@ self.addEventListener("install", function () {
 self.addEventListener("activate", function () {
   console.log("fcm sw activate..");
 });
+
 self.addEventListener("push", function (e) {
   if (!e.data.json()) return;
   const resultData = e.data.json().notification;
